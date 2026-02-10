@@ -757,7 +757,7 @@ updateActiveTocLink();
 document.addEventListener('DOMContentLoaded', function() {
   // Sale Comp Map
 
-    var saleMap = L.map('saleMap').setView([33.9866, -118.4637], 14);
+    var saleMap = L.map('saleMap').setView([33.986388, -118.463763], 14);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap',
       maxZoom: 18
@@ -767,7 +767,7 @@ document.addEventListener('DOMContentLoaded', function() {
       html: '<div style="background:#C5A258;color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,0.3);">&#9733;</div>',
       iconSize: [32, 32], iconAnchor: [16, 16]
     });
-    L.marker([33.9866, -118.4637], {icon: subjectIcon})
+    L.marker([33.986388, -118.463763], {icon: subjectIcon})
       .bindPopup('<b>Subject: 2341 Beach Ave</b><br>3 Units | 1,698 SF | $1,995,000')
       .addTo(saleMap);
     var compIcon = function(num) {
@@ -777,37 +777,35 @@ document.addEventListener('DOMContentLoaded', function() {
         iconSize: [26, 26], iconAnchor: [13, 13]
       });
     };
-    var allCoords = [[33.9866,-118.4637]];
-    L.marker([33.9965,-118.4735], {icon:compIcon(1)}).bindPopup('<b>Comp 1: 11 19th Ave</b><br>3 Units | $2,600,000 | $867K/unit').addTo(saleMap);
-    allCoords.push([33.9965,-118.4735]);
-    L.marker([33.9922,-118.4697], {icon:compIcon(2)}).bindPopup('<b>Comp 2: 2318 Beach Ave</b><br>3 Units | $2,750,000 | $917K/unit').addTo(saleMap);
-    allCoords.push([33.9922,-118.4697]);
-    L.marker([33.9967,-118.4742], {icon:compIcon(3)}).bindPopup('<b>Comp 3: 11 20th Ave</b><br>3 Units | $2,645,000 | $882K/unit').addTo(saleMap);
-    allCoords.push([33.9967,-118.4742]);
-    L.marker([33.9886,-118.467], {icon:compIcon(4)}).bindPopup('<b>Comp 4: 2428 Ocean Ave</b><br>3 Units | $1,940,000 | $647K/unit').addTo(saleMap);
-    allCoords.push([33.9886,-118.467]);
-    L.marker([33.9905,-118.4678], {icon:compIcon(5)}).bindPopup('<b>Comp 5: 346 Brooks Ave</b><br>3 Units | $1,770,000 | $590K/unit').addTo(saleMap);
-    allCoords.push([33.9905,-118.4678]);
-    L.marker([33.9935,-118.4668], {icon:compIcon(6)}).bindPopup('<b>Comp 6: 549 San Juan Ave</b><br>3 Units | $2,000,000 | $667K/unit').addTo(saleMap);
-    allCoords.push([33.9935,-118.4668]);
-    L.marker([33.995,-118.4665], {icon:compIcon(7)}).bindPopup('<b>Comp 7: 712 6th Ave</b><br>3 Units | $1,800,000 | $600K/unit').addTo(saleMap);
-    allCoords.push([33.995,-118.4665]);
-    L.marker([33.9935,-118.465], {icon:compIcon(8)}).bindPopup('<b>Comp 8: 236 S 5th Ave</b><br>3 Units | $2,185,000 | $728K/unit').addTo(saleMap);
-    allCoords.push([33.9935,-118.465]);
-    L.marker([33.9942,-118.4652], {icon:compIcon(9)}).bindPopup('<b>Comp 9: 1011 5th Ave</b><br>3 Units | $1,846,000 | $615K/unit').addTo(saleMap);
-    allCoords.push([33.9942,-118.4652]);
-    L.marker([33.9892,-118.4594], {icon:compIcon(10)}).bindPopup('<b>Comp 10: 2474 Penmar Ave</b><br>3 Units | $1,490,000 | $497K/unit').addTo(saleMap);
-    allCoords.push([33.9892,-118.4594]);
-    L.marker([33.9928,-118.4655], {icon:compIcon(11)}).bindPopup('<b>Comp 11: 535 Rose Ave</b><br>3 Units | $1,525,000 | $508K/unit').addTo(saleMap);
-    allCoords.push([33.9928,-118.4655]);
-    L.marker([33.9918,-118.4594], {icon:compIcon(12)}).bindPopup('<b>Comp 12: 2200 Penmar Ave</b><br>3 Units | $1,400,000 | $467K/unit').addTo(saleMap);
-    allCoords.push([33.9918,-118.4594]);
+    var allCoords = [[33.986388,-118.463763]];
+    L.marker([33.985676,-118.471917], {icon:compIcon(1)}).bindPopup('<b>Comp 1: 11 19th Ave</b><br>3 Units | $2,600,000 | $867K/unit').addTo(saleMap);
+    allCoords.push([33.985676,-118.471917]);
+    L.marker([33.986918,-118.463686], {icon:compIcon(2)}).bindPopup('<b>Comp 2: 2318 Beach Ave</b><br>3 Units | $2,750,000 | $917K/unit').addTo(saleMap);
+    allCoords.push([33.986918,-118.463686]);
+    L.marker([33.985312,-118.463303], {icon:compIcon(3)}).bindPopup('<b>Comp 3: 2428 Ocean Ave</b><br>3 Units | $1,940,000 | $647K/unit').addTo(saleMap);
+    allCoords.push([33.985312,-118.463303]);
+    L.marker([33.993485,-118.471762], {icon:compIcon(4)}).bindPopup('<b>Comp 4: 346 Brooks Ave</b><br>3 Units | $1,770,000 | $590K/unit').addTo(saleMap);
+    allCoords.push([33.993485,-118.471762]);
+    L.marker([33.993042,-118.467845], {icon:compIcon(5)}).bindPopup('<b>Comp 5: 549 San Juan Ave</b><br>3 Units | $2,000,000 | $667K/unit').addTo(saleMap);
+    allCoords.push([33.993042,-118.467845]);
+    L.marker([33.996586,-118.469570], {icon:compIcon(6)}).bindPopup('<b>Comp 6: 712 6th Ave</b><br>3 Units | $1,800,000 | $600K/unit').addTo(saleMap);
+    allCoords.push([33.996586,-118.469570]);
+    L.marker([33.998696,-118.474884], {icon:compIcon(7)}).bindPopup('<b>Comp 7: 236 S 5th Ave</b><br>3 Units | $2,185,000 | $728K/unit').addTo(saleMap);
+    allCoords.push([33.998696,-118.474884]);
+    L.marker([33.993038,-118.470061], {icon:compIcon(8)}).bindPopup('<b>Comp 8: 1011 5th Ave</b><br>3 Units | $1,846,000 | $615K/unit').addTo(saleMap);
+    allCoords.push([33.993038,-118.470061]);
+    L.marker([33.993171,-118.449639], {icon:compIcon(9)}).bindPopup('<b>Comp 9: 2474 Penmar Ave</b><br>3 Units | $1,490,000 | $497K/unit').addTo(saleMap);
+    allCoords.push([33.993171,-118.449639]);
+    L.marker([33.998944,-118.472847], {icon:compIcon(10)}).bindPopup('<b>Comp 10: 535 Rose Ave</b><br>3 Units | $1,525,000 | $508K/unit').addTo(saleMap);
+    allCoords.push([33.998944,-118.472847]);
+    L.marker([33.997381,-118.452924], {icon:compIcon(11)}).bindPopup('<b>Comp 11: 2200 Penmar Ave</b><br>3 Units | $1,400,000 | $467K/unit').addTo(saleMap);
+    allCoords.push([33.997381,-118.452924]);
     saleMap.fitBounds(allCoords, {padding:[40,40]});
 
 
   // Active Listing Map
 
-    var activeMap = L.map('activeMap').setView([33.9866, -118.4637], 14);
+    var activeMap = L.map('activeMap').setView([33.986388, -118.463763], 14);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap',
       maxZoom: 18
@@ -817,7 +815,7 @@ document.addEventListener('DOMContentLoaded', function() {
       html: '<div style="background:#C5A258;color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,0.3);">&#9733;</div>',
       iconSize: [32, 32], iconAnchor: [16, 16]
     });
-    L.marker([33.9866, -118.4637], {icon: subjectIcon})
+    L.marker([33.986388, -118.463763], {icon: subjectIcon})
       .bindPopup('<b>Subject: 2341 Beach Ave</b><br>3 Units | 1,698 SF | $1,995,000')
       .addTo(activeMap);
     var compIcon = function(num) {
@@ -827,29 +825,29 @@ document.addEventListener('DOMContentLoaded', function() {
         iconSize: [26, 26], iconAnchor: [13, 13]
       });
     };
-    var allCoords = [[33.9866,-118.4637]];
-    L.marker([33.9966,-118.4743], {icon:compIcon(1)}).bindPopup('<b>Comp 1: 24 20th Ave</b><br>3 Units | $1,950,000 | $650K/unit<br>66 DOM').addTo(activeMap);
-    allCoords.push([33.9966,-118.4743]);
-    L.marker([33.996,-118.4755], {icon:compIcon(2)}).bindPopup('<b>Comp 2: 1916 Pacific Ave</b><br>3 Units | $2,250,000 | $750K/unit<br>146 DOM').addTo(activeMap);
-    allCoords.push([33.996,-118.4755]);
-    L.marker([33.9944,-118.4674], {icon:compIcon(3)}).bindPopup('<b>Comp 3: 643 Santa Clara Ave</b><br>3 Units | $2,275,000 | $758K/unit<br>88 DOM').addTo(activeMap);
-    allCoords.push([33.9944,-118.4674]);
-    L.marker([33.9936,-118.467], {icon:compIcon(4)}).bindPopup('<b>Comp 4: 558 San Juan Ave</b><br>3 Units | $2,500,000 | $833K/unit<br>13 DOM').addTo(activeMap);
-    allCoords.push([33.9936,-118.467]);
-    L.marker([33.9944,-118.4735], {icon:compIcon(5)}).bindPopup('<b>Comp 5: 43 Dudley Ave</b><br>3 Units | $2,675,000 | $892K/unit<br>17 DOM').addTo(activeMap);
-    allCoords.push([33.9944,-118.4735]);
-    L.marker([33.993,-118.466], {icon:compIcon(6)}).bindPopup('<b>Comp 6: 528 Westminster Ave</b><br>3 Units | $2,695,000 | $898K/unit<br>75 DOM').addTo(activeMap);
-    allCoords.push([33.993,-118.466]);
-    L.marker([33.9902,-118.4598], {icon:compIcon(7)}).bindPopup('<b>Comp 7: 1025 Pleasantview Ave</b><br>3 Units | $2,900,000 | $967K/unit<br>28 DOM').addTo(activeMap);
-    allCoords.push([33.9902,-118.4598]);
-    L.marker([33.9893,-118.4626], {icon:compIcon(8)}).bindPopup('<b>Comp 8: 1309 Cabrillo</b><br>3 Units | $1,285,000 | $428K/unit<br>70 DOM').addTo(activeMap);
-    allCoords.push([33.9893,-118.4626]);
+    var allCoords = [[33.986388,-118.463763]];
+    L.marker([33.985186,-118.470972], {icon:compIcon(1)}).bindPopup('<b>Comp 1: 24 20th Ave</b><br>3 Units | $1,950,000 | $650K/unit<br>66 DOM').addTo(activeMap);
+    allCoords.push([33.985186,-118.470972]);
+    L.marker([33.985753,-118.470460], {icon:compIcon(2)}).bindPopup('<b>Comp 2: 1916 Pacific Ave</b><br>3 Units | $2,250,000 | $750K/unit<br>146 DOM').addTo(activeMap);
+    allCoords.push([33.985753,-118.470460]);
+    L.marker([33.993267,-118.465181], {icon:compIcon(3)}).bindPopup('<b>Comp 3: 643 Santa Clara Ave</b><br>3 Units | $2,275,000 | $758K/unit<br>88 DOM').addTo(activeMap);
+    allCoords.push([33.993267,-118.465181]);
+    L.marker([33.992871,-118.467455], {icon:compIcon(4)}).bindPopup('<b>Comp 4: 558 San Juan Ave</b><br>3 Units | $2,500,000 | $833K/unit<br>13 DOM').addTo(activeMap);
+    allCoords.push([33.992871,-118.467455]);
+    L.marker([33.994896,-118.478760], {icon:compIcon(5)}).bindPopup('<b>Comp 5: 43 Dudley Ave</b><br>3 Units | $2,675,000 | $892K/unit<br>17 DOM').addTo(activeMap);
+    allCoords.push([33.994896,-118.478760]);
+    L.marker([33.993205,-118.468797], {icon:compIcon(6)}).bindPopup('<b>Comp 6: 528 Westminster Ave</b><br>3 Units | $2,695,000 | $898K/unit<br>75 DOM').addTo(activeMap);
+    allCoords.push([33.993205,-118.468797]);
+    L.marker([33.995969,-118.463473], {icon:compIcon(7)}).bindPopup('<b>Comp 7: 1025 Pleasantview Ave</b><br>3 Units | $2,900,000 | $967K/unit<br>28 DOM').addTo(activeMap);
+    allCoords.push([33.995969,-118.463473]);
+    L.marker([33.990578,-118.467962], {icon:compIcon(8)}).bindPopup('<b>Comp 8: 1309 Cabrillo</b><br>3 Units | $1,285,000 | $428K/unit<br>70 DOM').addTo(activeMap);
+    allCoords.push([33.990578,-118.467962]);
     activeMap.fitBounds(allCoords, {padding:[40,40]});
 
 
   // Rent Comp Map
 
-    var rentMap = L.map('rentMap').setView([33.9866, -118.4637], 14);
+    var rentMap = L.map('rentMap').setView([33.986388, -118.463763], 14);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap',
       maxZoom: 18
@@ -859,7 +857,7 @@ document.addEventListener('DOMContentLoaded', function() {
       html: '<div style="background:#C5A258;color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,0.3);">&#9733;</div>',
       iconSize: [32, 32], iconAnchor: [16, 16]
     });
-    L.marker([33.9866, -118.4637], {icon: subjectIcon})
+    L.marker([33.986388, -118.463763], {icon: subjectIcon})
       .bindPopup('<b>Subject: 2341 Beach Ave</b><br>3 Units | 1,698 SF | $1,995,000')
       .addTo(rentMap);
     var compIcon = function(num) {
@@ -869,19 +867,19 @@ document.addEventListener('DOMContentLoaded', function() {
         iconSize: [26, 26], iconAnchor: [13, 13]
       });
     };
-    var allCoords = [[33.9866,-118.4637]];
-    L.marker([33.9883,-118.4596], {icon:compIcon(1)}).bindPopup('<b>Comp 1: 2429 McKinley Ave</b><br>2BR | $7,400/mo').addTo(rentMap);
-    allCoords.push([33.9883,-118.4596]);
-    L.marker([33.9893,-118.4599], {icon:compIcon(2)}).bindPopup('<b>Comp 2: 2416 Boone Ave</b><br>2BR | $6,200/mo').addTo(rentMap);
-    allCoords.push([33.9893,-118.4599]);
-    L.marker([33.9895,-118.463], {icon:compIcon(3)}).bindPopup('<b>Comp 3: 1537 Cabrillo Ave</b><br>2BR | $5,499/mo').addTo(rentMap);
-    allCoords.push([33.9895,-118.463]);
-    L.marker([33.9938,-118.4665], {icon:compIcon(4)}).bindPopup('<b>Comp 4: 553 1/2 Washington Blvd</b><br>1BR | $2,495/mo').addTo(rentMap);
-    allCoords.push([33.9938,-118.4665]);
-    L.marker([33.992,-118.4648], {icon:compIcon(5)}).bindPopup('<b>Comp 5: 402 N Venice Blvd</b><br>1BR | $3,600/mo').addTo(rentMap);
-    allCoords.push([33.992,-118.4648]);
-    L.marker([33.988,-118.458], {icon:compIcon(6)}).bindPopup('<b>Comp 6: 2500 Strongs Dr</b><br>1BR | $3,795/mo').addTo(rentMap);
-    allCoords.push([33.988,-118.458]);
+    var allCoords = [[33.986388,-118.463763]];
+    L.marker([33.985347,-118.462800], {icon:compIcon(1)}).bindPopup('<b>Comp 1: 2429 McKinley Ave</b><br>2BR | $7,400/mo').addTo(rentMap);
+    allCoords.push([33.985347,-118.462800]);
+    L.marker([33.985996,-118.458447], {icon:compIcon(2)}).bindPopup('<b>Comp 2: 2416 Boone Ave</b><br>2BR | $6,200/mo').addTo(rentMap);
+    allCoords.push([33.985996,-118.458447]);
+    L.marker([33.989549,-118.464375], {icon:compIcon(3)}).bindPopup('<b>Comp 3: 1537 Cabrillo Ave</b><br>2BR | $5,499/mo').addTo(rentMap);
+    allCoords.push([33.989549,-118.464375]);
+    L.marker([33.983935,-118.459734], {icon:compIcon(4)}).bindPopup('<b>Comp 4: 553 1/2 Washington Blvd</b><br>1BR | $2,495/mo').addTo(rentMap);
+    allCoords.push([33.983935,-118.459734]);
+    L.marker([33.986210,-118.467824], {icon:compIcon(5)}).bindPopup('<b>Comp 5: 402 N Venice Blvd</b><br>1BR | $3,600/mo').addTo(rentMap);
+    allCoords.push([33.986210,-118.467824]);
+    L.marker([33.983089,-118.467843], {icon:compIcon(6)}).bindPopup('<b>Comp 6: 2500 Strongs Dr</b><br>1BR | $3,795/mo').addTo(rentMap);
+    allCoords.push([33.983089,-118.467843]);
     rentMap.fitBounds(allCoords, {padding:[40,40]});
 
 });
