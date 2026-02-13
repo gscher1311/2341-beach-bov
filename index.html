@@ -90,8 +90,9 @@
   .embed-map-caption { font-size: 12px; color: #888; text-align: center; margin-top: 8px; font-style: italic; }
   .embed-map-fallback { display: none; font-size: 12px; color: #666; font-style: italic; margin-bottom: 30px; }
   .metrics-grid-4 { grid-template-columns: repeat(4, 1fr); }
-  .toc-nav { background: #1B3A5C; padding: 0 20px; display: flex; flex-wrap: nowrap; gap: 0; justify-content: center; align-items: stretch; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.15); overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  .toc-nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 12px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; padding: 13px 11px; border-bottom: 2px solid transparent; transition: all 0.2s ease; white-space: nowrap; display: flex; align-items: center; }
+  .toc-nav { background: #1B3A5C; padding: 0 12px; display: flex; flex-wrap: nowrap; gap: 0; justify-content: center; align-items: stretch; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.15); overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none; }
+  .toc-nav::-webkit-scrollbar { display: none; }
+  .toc-nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 11px; font-weight: 500; letter-spacing: 0.3px; text-transform: uppercase; padding: 12px 8px; border-bottom: 2px solid transparent; transition: all 0.2s ease; white-space: nowrap; display: flex; align-items: center; }
   .toc-nav a:hover { color: #fff; background: rgba(197,162,88,0.12); border-bottom-color: rgba(197,162,88,0.4); }
   .toc-nav a.toc-active { color: #C5A258; font-weight: 600; border-bottom-color: #C5A258; }
   .footer { background: #1B3A5C; color: #fff; padding: 40px 60px; }
@@ -167,8 +168,8 @@
     table { font-size: 12px; }
     th { font-size: 11px; padding: 8px 6px; }
     td { padding: 7px 6px; }
-    .toc-nav { padding: 10px 16px; gap: 4px 10px; }
-    .toc-nav a { font-size: 11px; padding: 3px 8px; }
+    .toc-nav { padding: 0 6px; }
+    .toc-nav a { font-size: 10px; padding: 10px 6px; letter-spacing: 0.2px; }
     .metrics-grid, .metrics-grid-4 { grid-template-columns: repeat(2, 1fr); gap: 12px; }
     .metric-card { padding: 14px 10px; }
     .metric-value { font-size: 22px; }
@@ -195,8 +196,8 @@
     .section-title { font-size: 20px; }
     .footer { padding: 24px 12px; }
     .footer-team { gap: 16px; }
-    .toc-nav { padding: 0 6px; }
-    .toc-nav a { font-size: 9px; padding: 10px 6px; letter-spacing: 0.5px; }
+    .toc-nav { padding: 0 4px; }
+    .toc-nav a { font-size: 8px; padding: 10px 4px; letter-spacing: 0; }
     .leaflet-map { height: 240px; }
   }
 </style>
